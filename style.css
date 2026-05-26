@@ -59,17 +59,21 @@ nav .logo {
     color: #ffffff;
 }
 
+/* Updated Resume Button to match the View Work gradient */
 .resume-nav-btn {
-    border: 1px solid rgba(236, 72, 153, 0.4);
-    padding: 8px 18px;
+    background: linear-gradient(90deg, #ec4899 0%, #8b5cf6 100%);
+    padding: 8px 20px;
     border-radius: 20px;
     color: #ffffff !important;
-    background: rgba(236, 72, 153, 0.05);
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 4px 12px rgba(236, 72, 153, 0.2);
+    transition: all 0.2s ease;
 }
 
 .resume-nav-btn:hover {
-    background: rgba(236, 72, 153, 0.2);
-    box-shadow: 0 0 15px rgba(236, 72, 153, 0.3);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(236, 72, 153, 0.4);
 }
 
 /* 3. Hero Layout Panels Section */
@@ -246,6 +250,8 @@ nav .logo {
     border-radius: 20px;
     overflow: hidden;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -274,6 +280,9 @@ nav .logo {
 
 .project-content {
     padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-content h3 {
@@ -286,7 +295,7 @@ nav .logo {
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    height: 75px;
+    flex-grow: 1;
     overflow: hidden;
 }
 
@@ -345,22 +354,24 @@ nav .logo {
     letter-spacing: 0.5px;
 }
 
+/* Updated Get in Touch Button to match the View Work gradient */
 .cta-btn-outline {
     display: inline-block;
-    border: 1px solid #221a36;
-    background: #110c1f;
+    background: linear-gradient(90deg, #ec4899 0%, #8b5cf6 100%);
     color: #ffffff;
-    padding: 12px 32px;
+    padding: 14px 36px;
     border-radius: 25px;
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 600;
-    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
+    transition: all 0.2s ease;
 }
 
 .cta-btn-outline:hover {
-    border-color: #3b2e5c;
-    background: rgba(255, 255, 255, 0.02);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(236, 72, 153, 0.5);
 }
 
 /* 8. About Page Layout Style */
@@ -378,7 +389,7 @@ nav .logo {
     margin-bottom: 15px;
 }
 
-/* 9. Minimalist Contact Content Frame (Recreated) */
+/* 9. Minimalist Contact Content Frame */
 .minimal-contact-container {
     max-width: 800px;
     margin: 0 auto;
